@@ -1,11 +1,6 @@
 FHEM/CCU Home Cinema Service
 ============================
 
-[1]: http://www.fhem.de
-[2]: http://www.gnu.org/licenses/gpl-2.0.html
-[3]: http://www.eq-3.de/produkt-detail-zentralen-und-gateways/items/homematic-zentrale-ccu-2.html
-[4]: http://bytefeed.com
-
 About
 -----
 
@@ -13,8 +8,8 @@ This service allows to send commands to FHEM or Homematic CCU on specific
 player actions in order to create a cinema like atmosphere at home. The
 user can configure commands to send to FHEM on various player events:
 
- - On Kodi Start
- - On Kodi Shutdown
+ - On XBMC Start
+ - On XBMC Shutdown
  - On Video Playback Start
  - On Video Playback Pause
  - On Video Playback Stop
@@ -64,13 +59,19 @@ Unknown;Start;Shutdown;Audio playback start;Video playback start;Audio playback 
 
 License
 -------
-This software is released under the [GPL 2.0 license][2].
-The plugin logo is under copyright by [bytefeed.com][4].
-Thank you for the kind permission of use!
+This software is released under the [GPL 2.0 license] [2].
+The plugin logo is under copyright by [bytefeed.com] [4]. Thank you for the kind permission of use!
 
 
 Useful Links
 -------------
 
-Dedicated Repository: https://archive.yeasoft.net/repository.yeasoft.zip
-Support Forum: https://forum.kodi.tv/showthread.php?tid=204667
+Dedicated Repository: http://archive.yeasoft.net/repository.yeasoft.zip
+
+Support Forum: http://forum.xbmc.org/showthread.php?tid=204667
+
+
+[1]: http://www.fhem.de
+[2]: http://www.gnu.org/licenses/gpl-2.0.html
+[3]: http://www.eq-3.de/produkt-detail-zentralen-und-gateways/items/homematic-zentrale-ccu-2.html
+[4]: http://bytefeed.com

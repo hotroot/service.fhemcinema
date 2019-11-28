@@ -18,11 +18,7 @@
 		<description lang="de">Diese Erweiterung erlaubt die Steuerung der Beleuchtung und anderer Geräte über den Heim-Automatisierungsserver FHEM oder mittels Homematic CCU. Die Rechte am Plugin Logo liegen bei bytefeed.com. Vielen Dank für die Nutzungserlaubnis.</description>
 		<description lang="en">This extension allows to control lights and other devices by sending commands on various player actions to the home automation system FHEM or to a Homematic CCU. The plugin logo is under copyright by bytefeed.com. Thank you for the kind permission of use!</description>
 		<description lang="it">Quest'estensione permette il controllo delle luci e di altri dispositivi mediante il sistema di automazione casalinga FHEM o Homematic CCU. I diritti d'autore del logo appartengono a bytefeed.com. Ringraziamo per il permesso d'uso.</description>
-		<news>v0.3.4 (2018-01-XX):
-- Fixed broken localisation
-v0.3.3 (2017-12-25):
-- Fixed broken settings (Closes #4)
-- Adapted to new language system
+
 		<platform>all</platform>
 		<language></language>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
