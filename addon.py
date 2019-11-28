@@ -18,7 +18,7 @@
 # -- Imports ------------------------------------------------
 import datetime,socket,subprocess,os
 import xbmc,xbmcplugin,xbmcgui,xbmcaddon
-import httplib
+import http.client
 import time
 
 # -- Constants ----------------------------------------------
@@ -112,7 +112,7 @@ class FhemHandler( xbmc.Player ):
 				state = 8
 			else:
 				state = 0
-			connection = httplib.HTTPConnection(hostname,8181,timeout=10)
+			connection = http.client.HTTPConnection(hostname,8181,timeout=10)
 			connection.connect();
 			connection.set_debuglevel(9);
 			params = 'v1=dom.GetObject(\"'+ccusystemvar+'\").State(\"' + str(state) + '\");';
