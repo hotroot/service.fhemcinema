@@ -4,7 +4,7 @@ FHEM/CCU Home Cinema Service
 About
 -----
 #####################
-Now compatible wit the latest @milhouse builds/Kodi 19.
+Now compatible wit the latest @milhouse builds/Kodi 19
 #####################
 
 This service allows to send commands to FHEM or Homematic CCU on specific
