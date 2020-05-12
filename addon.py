@@ -31,6 +31,8 @@ settings = xbmcaddon.Addon( id = ADDON_ID )
 language = xbmcaddon.Addon( id = ADDON_ID ).getLocalizedString
 
 # -- Functions ----------------------------------------------
+if __name__ == '__main__':
+    monitor = xbmc.Monitor()
 
 # -- Classes ------------------------------------------------
 class FhemHandler( xbmc.Player ):
@@ -124,7 +126,7 @@ class FhemHandler( xbmc.Player ):
 			xbmc.log ('No CCU Object configured')
 
 	def Run(self):
-		while(not xbmc.abortRequested):
+		while not monitor.abortRequested():
 			if xbmc.Player().isPlaying():
 				if xbmc.Player().isPlayingVideo():
 					self.isplayingvideo = True
