@@ -2,7 +2,8 @@ FHEM/CCU Home Cinema Service
 ============================
 
 Compatible with the latest Kodi 19 Matrix builds.
-forked from: https://github.com/tuxpoldo/service.fhemcinema
+
+Forked from: https://github.com/tuxpoldo/service.fhemcinema
 
 License
 -------
