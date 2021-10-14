@@ -15,19 +15,20 @@
 		<setting id="onaudiopause"		type="text"			label="30037"	default=""		visible="eq(-11,0)"	/>
 		<setting id="onaudiostop"		type="text"			label="30038"	default=""		visible="eq(-12,0)"	/>
 		<setting id="ccusystemvar"		type="text"			label="30039"	default=""		visible="eq(-13,1)"	/>
+		<setting id="createsysvar"      type="bool"			label="30040"	default="false"	visible="eq(-14,1)" />
 	</category>
 	<category label="30002">
-		<setting id="daytimeenable"		type="bool"		label="30021"	default="false"	/>
-		<setting id="daytimefrom"		type="time"		label="30022"	default="06:00"	/>
-		<setting id="daytimeto"			type="time"		label="30023"	default="20:00"	/>
-		<setting						type="sep"										/>
-		<setting id="onstartupdt"		type="text"		label="30031"	default=""		/>
-		<setting id="onshutdowndt"		type="text"		label="30032"	default=""		/>
-		<setting id="onvideoplaydt"		type="text"		label="30033"	default=""		/>
-		<setting id="onvideopausedt"	type="text"		label="30034"	default=""		/>
-		<setting id="onvideostopdt"		type="text"		label="30035"	default=""		/>
-		<setting id="onaudioplaydt"		type="text"		label="30036"	default=""		/>
-		<setting id="onaudiopausedt"	type="text"		label="30037"	default=""		/>
-		<setting id="onaudiostopdt"		type="text"		label="30038"	default=""		/>
+		<setting id="daytimeenable"		type="bool"			label="30021"	default="false"						/>
+		<setting id="daytimefrom"		type="time"			label="30022"	default="06:00"	visible="eq(-1,true)"	subsetting="true"	/>
+		<setting id="daytimeto"			type="time"			label="30023"	default="20:00"	visible="eq(-2,true)"	subsetting="true"	/>
+		<setting						type="lsep"			label="30014"					visible="eq(-3,true)"	/>
+		<setting id="onstartupdt"		type="text"			label="30031"	default=""		visible="eq(-4,true)"	/>
+		<setting id="onshutdowndt"		type="text"			label="30032"	default=""		visible="eq(-5,true)"	/>
+		<setting id="onvideoplaydt"		type="text"			label="30033"	default=""		visible="eq(-6,true)"	/>
+		<setting id="onvideopausedt"	type="text"			label="30034"	default=""		visible="eq(-7,true)"	/>
+		<setting id="onvideostopdt"		type="text"			label="30035"	default=""		visible="eq(-8,true)"	/>
+		<setting id="onaudioplaydt"		type="text"			label="30036"	default=""		visible="eq(-9,true)"	/>
+		<setting id="onaudiopausedt"	type="text"			label="30037"	default=""		visible="eq(-10,true)"	/>
+		<setting id="onaudiostopdt"		type="text"			label="30038"	default=""		visible="eq(-11,true)"	/>
 	</category>
 </settings>

@@ -1,0 +1,98 @@
+# Kodi Media Center language file
+# Addon Name: Home Cinema Automation
+# Addon id: service.fhemcinema
+# Addon Provider: leo.moll@yeasoft.com
+msgid ""
+msgstr ""
+"Project-Id-Version: service.fhemcinema\n"
+"Report-msgstr-Bugs-To: leo.moll@yeasoft.com\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Alex\n"
+"Language-Team: German (http://www.transifex.com/projects/p/xbmc-addons/language/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30001"
+msgid "General Settings"
+msgstr "Allgemein"
+
+msgctxt "#30002"
+msgid "Daytime"
+msgstr "Tagsüber"
+
+msgctxt "#30010"
+msgid "Home Automation System"
+msgstr "Heim-Automationssystem"
+
+msgctxt "#30011"
+msgid "Host"
+msgstr "Host"
+
+msgctxt "#30012"
+msgid "Port"
+msgstr "Port"
+
+msgctxt "#30013"
+msgid "Delay command on Video/Audio Stopped"
+msgstr "Befehl bei Video/Audio gestoppt verzögern"
+
+msgctxt "#30014"
+msgid "Actions"
+msgstr "Aktionen"
+
+msgctxt "#30021"
+msgid "Enable Daytime Commands (only FHEM)"
+msgstr "Tagesvariante aktivieren (nur mit FHEM)"
+
+msgctxt "#30022"
+msgid "From"
+msgstr "Von"
+
+msgctxt "#30023"
+msgid "To"
+msgstr "Bis"
+
+msgctxt "#30031"
+msgid "On Startup"
+msgstr "Kodi gestartet"
+
+msgctxt "#30032"
+msgid "On Shutdown"
+msgstr "Kodi beendet"
+
+msgctxt "#30033"
+msgid "Video Started"
+msgstr "Videowiedergabe gestartet"
+
+msgctxt "#30034"
+msgid "Video Paused"
+msgstr "Videowiedergabe angehalten"
+
+msgctxt "#30035"
+msgid "Video Stopped"
+msgstr "Videowiedergabe beendet"
+
+msgctxt "#30036"
+msgid "Audio Started"
+msgstr "Audiowiedergabe gestartet"
+
+msgctxt "#30037"
+msgid "Audio Paused"
+msgstr "Audiowiedergabe angehalten"
+
+msgctxt "#30038"
+msgid "Audio Stopped"
+msgstr "Audiowiedergabe beendet"
+
+msgctxt "#30039"
+msgid "System variable"
+msgstr "Systemvariable"
+
+msgctxt "#30040"
+msgid "Create System Variable if it does not exist"
+msgstr "Systemvariable anlegen, wenn sie nicht existiert."
+

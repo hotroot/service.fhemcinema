@@ -1,94 +1,100 @@
 # Kodi Media Center language file
-# Addon Name: MediathekView
+# Addon Name: Home Cinema Automation
 # Addon id: service.fhemcinema
 # Addon Provider: leo.moll@yeasoft.com
 msgid ""
 msgstr ""
-"Project-Id-Version: Kodi Addons\n"
-"Report-Msgid-Bugs-To: leo.moll@yeasoft.com\n"
+
+"Project-Id-Version: service.fhemcinema\n"
+"Report-msgstr-Bugs-To: leo.moll@yeasoft.com\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Alex\n"
-"Language-Team: English (http://www.transifex.com/projects/p/xbmc-addons/language/en/)\n"
+"Language-Team: Italian (http://www.transifex.com/projects/p/xbmc-addons/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
+"Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgctxt "#30001"
 msgid "General Settings"
-msgstr ""
+msgstr "Impostazioni Generali"
 
 msgctxt "#30002"
 msgid "Daytime"
-msgstr ""
+msgstr "Di Giorno"
 
 msgctxt "#30010"
 msgid "Home Automation System"
-msgstr ""
+msgstr "Sistema di automazione"
 
 msgctxt "#30011"
 msgid "Host"
-msgstr ""
+msgstr "Host"
+
 
 msgctxt "#30012"
 msgid "Port"
-msgstr ""
+msgstr "Port"
 
 msgctxt "#30013"
 msgid "Delay command on Video/Audio Stopped"
-msgstr ""
+msgstr "Ritarda esecuzione al fine risproduzione"
 
 msgctxt "#30014"
 msgid "Actions"
-msgstr ""
+msgstr "Azioni"
 
 msgctxt "#30021"
 msgid "Enable Daytime Commands (only FHEM)"
-msgstr ""
+msgstr "Attivare variante diurna (solo con FHEM)"
 
 msgctxt "#30022"
 msgid "From"
-msgstr ""
+msgstr "Da"
 
 msgctxt "#30023"
 msgid "To"
-msgstr ""
+msgstr "A"
 
 msgctxt "#30031"
 msgid "On Startup"
-msgstr ""
+msgstr "Kodi avviato"
 
 msgctxt "#30032"
 msgid "On Shutdown"
-msgstr ""
+msgstr "Kodi terminato"
 
 msgctxt "#30033"
 msgid "Video Started"
-msgstr ""
+msgstr "Video avviato"
 
 msgctxt "#30034"
 msgid "Video Paused"
-msgstr ""
+msgstr "Video in pausa"
 
 msgctxt "#30035"
 msgid "Video Stopped"
-msgstr ""
+msgstr "Video finito"
 
 msgctxt "#30036"
 msgid "Audio Started"
-msgstr ""
+msgstr "Audio avviato"
 
 msgctxt "#30037"
 msgid "Audio Paused"
-msgstr ""
+msgstr "Audio in pausa"
 
 msgctxt "#30038"
 msgid "Audio Stopped"
-msgstr ""
+msgstr "Audio finito"
 
 msgctxt "#30039"
 msgid "System variable"
-msgstr ""
+msgstr "Variabile di sistema"
+
+msgctxt "#30040"
+msgid "Create System Variable if it does not exist"
+msgstr "Crea variabile di sistema se non esiste"
 

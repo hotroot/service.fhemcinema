@@ -91,7 +91,8 @@ class FhemHandler( xbmc.Player ):
 			s.close()
 
 	def SendCCU(self,command):
-		ccusystemvar=settings.getSetting('ccusystemvar')
+		ccusystemvar = settings.getSetting('ccusystemvar')
+		createsysvar = settings.getSetting('createsysvar')
 		if type(ccusystemvar) is str and len(ccusystemvar) > 0:
 			hostname = settings.getSetting('hostname')
 			xbmc.log ('Sending command to CCU '+hostname+': '+command)
@@ -117,8 +118,27 @@ class FhemHandler( xbmc.Player ):
 			connection = http.client.HTTPConnection(hostname,8181,timeout=10)
 			connection.connect();
 			connection.set_debuglevel(9);
-			params = 'v1=dom.GetObject(\"'+ccusystemvar+'\").State(\"' + str(state) + '\");';
-			connection.request("POST", "/test.exe", params);
+			params = 'object svObj = dom.GetObject(ID_SYSTEM_VARIABLES).Get(\"'+ccusystemvar+'\");\n'
+			params = params + 'if (svObj) {\n'
+			params = params + '  svObj.State(' + str(state) + ');\n'
+			if settings.getSetting( 'createsysvar' ) == "true":
+				params = params + '} else {\n'
+				params = params + '  object svObjects = dom.GetObject(ID_SYSTEM_VARIABLES);\n'
+				params = params + '  svObj = dom.CreateObject(OT_VARDP);\n'
+				params = params + '  svObjects.Add(svObj.ID());\n'
+				params = params + '  svObj.Name(\"'+ccusystemvar+'\");\n'
+				params = params + '  svObj.ValueType(ivtInteger);\n'
+				params = params + '  svObj.ValueSubType(istEnum);\n'
+				params = params + '  svObj.DPInfo(\"\");\n'
+				params = params + '  svObj.ValueList(\"Unknown;Start;Shutdown;Audio playback start;Video playback start;Audio playback stop;Video playback stop;Audio playback pause;Video playback pause\");\n'
+				params = params + '  svObj.DPArchive(false);\n'
+				params = params + '  svObj.State(' + str(state) + ');\n'
+				params = params + '  svObj.Internal(false);\n'
+				params = params + '  svObj.Visible(true);\n'
+				params = params + '  dom.RTUpdate(0);\n'
+			params = params + '}'
+
+			connection.request("POST", "/kodi.exe", params);
 			response = connection.getresponse()
 			connection.close();
 			xbmc.log ( "CCU response code: "+str(response.status))
